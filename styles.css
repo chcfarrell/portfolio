@@ -10,4 +10,5 @@
 body {
     font-family: var(--main-font);
     font-size: large;
+    background-image: linear-gradient(var(--brown), var(--light-brown), var(--light-green), var(--dark-green));
 }
