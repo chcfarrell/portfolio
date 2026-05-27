@@ -1,5 +1,10 @@
 :root {
     --main-font: 'Jersey 10', sans-serif;
+    --brown: rgb(139, 69, 19);
+    --light-brown: rgb(244, 164, 96);
+    --dark-green: rgb(0, 100, 0);
+    --light-green: rgb(144, 238, 144);
+    --black: rgb(0, 0, 0);
 }
 
 body {
