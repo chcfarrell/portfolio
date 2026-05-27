@@ -10,6 +10,8 @@
 
 }
 
+/* MAIN PAGE */
+
 body {
     font-family: var(--main-font);
     letter-spacing: 2px;
@@ -117,11 +119,25 @@ main {
     border-radius: 10px;
     corner-shape: bevel;
 }
+#skills ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skills li {
+    background-color: var(--white-faint);
+    padding: 7px;
+    width: max-content;
+    border-style: inset;
+    border-radius: 10px;
+    corner-shape: bevel;
+
+}
 
 #bottom {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--white-faint);
     border-radius: 35px;
     corner-shape: bevel;
@@ -138,3 +154,5 @@ footer {
     -webkit-text-stroke: 0.9px var(--black);
     text-align: center;
 }
+
+/* LINKED PAGES */
