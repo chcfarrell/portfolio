@@ -156,3 +156,36 @@ footer {
 }
 
 /* LINKED PAGES */
+
+.ref-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ref-page h2 {
+    color: var(--white);
+    font-size: 40px;
+    -webkit-text-stroke: 0.5px var(--black);
+}
+
+.ref-body {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--white-faint);
+    border-radius: 35px;
+    corner-shape: bevel;
+}
+
+.return a {
+    color: var(--white);
+    -webkit-text-stroke: 1px var(--black);
+    text-decoration: underline overline wavy var(--dark-blue);
+}
