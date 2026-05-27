@@ -1,14 +1,140 @@
 :root {
     --main-font: 'Jersey 10', sans-serif;
-    --brown: rgb(139, 69, 19);
-    --light-brown: rgb(244, 164, 96);
-    --dark-green: rgb(0, 100, 0);
-    --light-green: rgb(144, 238, 144);
+    --dark-blue: rgb(72, 61, 139);
+    --steel-blue: rgb(70, 130, 180);
     --black: rgb(0, 0, 0);
+    --white: rgb(248, 248, 255);
+    --white-faint: rgb(248, 248, 255, 0.5);
+    --gray: rgb(105, 105, 105);
+    --gray-faint: rgb(105, 105, 105, 0.4);
+
 }
 
 body {
     font-family: var(--main-font);
+    letter-spacing: 2px;
+    line-height: 2rem;
     font-size: large;
-    background-image: linear-gradient(var(--brown), var(--light-brown), var(--light-green), var(--dark-green));
+    background-image: linear-gradient(to bottom right, var(--dark-blue), var(--gray), var(--steel-blue));
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: x-large;
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+a:focus {
+    color: var(--steel-blue);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+header h2 {
+    font-size: 35px;
+}
+
+header h1, header h2 {
+    color: var(--white);
+    -webkit-text-stroke: 0.5px var(--black);
+}
+
+header h2 {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+main {
+    margin: 20px;
+    padding: 25px;
+    border: 4px inset var(--black);
+    border-radius: 25px;
+    corner-shape: bevel;
+}
+
+#about-me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white-faint);
+    border-radius: 35px;
+    corner-shape: bevel;
+}
+
+#about-me p {
+    text-align: center;
+    padding: 20px;
+}
+
+#skills {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-faint);
+    border-radius: 35px;
+    corner-shape: bevel;
+}
+
+#skills-pulp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#adobe-skills {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--gray-faint);
+    border-radius: 10px;
+    corner-shape: bevel;
+}
+
+#stack-skills {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--gray-faint);
+    border-radius: 10px;
+    corner-shape: bevel;
+}
+
+#bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white-faint);
+    border-radius: 35px;
+    corner-shape: bevel;
+}
+
+#external-links, #contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-size: large;
+    color: var(--white);
+    -webkit-text-stroke: 0.9px var(--black);
+    text-align: center;
 }
